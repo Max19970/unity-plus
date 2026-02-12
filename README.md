@@ -66,6 +66,26 @@ ProjectSettings/          # Unity project settings
 3. Откройте `Assets/_Project/Scenes/SampleScene.unity`.
 4. Убедитесь, что проект запускается в Play Mode без ошибок.
 
+## Системный промпт AI-агента
+
+Системный промпт, определяющий строгие инженерные правила работы агента, перенесен в:
+
+- `Docs/AI/SYSTEM.md`
+
+Что закреплено на уровне системного промпта:
+
+- Режим Unity Principal Engineer с непереговорными архитектурными требованиями.
+- Строгий протокол выполнения задач: Intake -> Planning -> Implementation -> Verification Gate -> Hot-refactor -> Финальный аудит.
+- Обязательная фиксация артефактов задачи:
+  - `Docs/AI/TaskPlans/<task-id>.md`
+  - `Docs/AI/TaskReports/<task-id>.md`
+- Жесткий Definition of Done: задачу нельзя закрыть без валидации, проверок и прозрачного отчета.
+
+Шаблоны артефактов:
+
+- `Docs/AI/TaskPlans/_template.md`
+- `Docs/AI/TaskReports/_template.md`
+
 ## Рекомендуемые шаги при создании нового проекта на основе шаблона
 
 1. Изменить `Company Name`, `Product Name`, `Bundle Identifier` в `Project Settings > Player`.
